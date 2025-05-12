@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration</title>
+  <link href="index.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Bebas+Neue&display=swap" rel="stylesheet">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <h2>Registration</h2>
+  <div class="container">
+
+    <form id="registrationForm" class="form">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <input type="text" id="goal" placeholder="Enter your goal..." required />
+      <p id="mentorSuggestion"></p>
+
+      <input type="hidden" id="mentor" required />
+
+      <h3>Select Your Mentor</h3>
+      <div id="card-area">
+        <div class="wrapper">
+          <div class="box-area"> 
+              <div class="box" data-mentor="Nurzhan Sagyndyq">
+                  <img src="img/WhatsApp Image 2025-05-11 at 16.11.02_8355960a.jpg" alt="">
+                  <div class="overlay">
+                      <h3>Nurzhan Sagyndyq</h3>
+                      <p>Expert in career coaching, resume building, LinkedIn optimization, and job interview preparation.</p>
+                  </div>
+              </div>
+              <div class="box" data-mentor="Maksat Guliev">
+                  <img src="img/WhatsApp Image 2025-05-11 at 16.03.19_8af3ac10.jpg" alt="">
+                  <div class="overlay">
+                      <h3>Maksat Guliev</h3>
+                      <p> Specializes in frontend web development, teaching HTML, CSS, JavaScript, and responsive web design.</p>
+                  </div>
+              </div>
+              <div class="box" data-mentor="Bakytzhan Myktybaev">
+                  <img src="img/WhatsApp Image 2025-05-11 at 16.08.32_923532d6.jpg" alt="">
+                  <div class="overlay">
+                      <h3>Bakytzhan Myktybaev</h3>
+                      <p>Expert in mobile app development with Flutter & Dart, guiding you through creating and publishing apps for Android and iOS.</p>
+                  </div>
+              </div>
+              <div class="box" data-mentor="Aibol Zhanybek">
+                <img src="img/WhatsApp Image 2025-05-11 at 17.06.04_d2a44331.jpg" alt="">
+                <div class="overlay">
+                  <h3>Aibol Zhanybek</h3>
+                  <p>Expert in graphic design, specializing in logos, branding, and creative visual solutions.</p>
+                </div>
+              </div>
+          </div>            
+      </div>       
+    </div>
+
+    <button type="submit">Register</button>
+    <p class="link">Already have an account? <a href="login.html" class="login">Log in</a></p>
+  </form>
+
+  <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h2>MyMentor</h2>
+      <p>Platform for learning IT with mentors</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#">About Us</a>
+      <a href="#">Contacts</a>
+      <a href="#">FAQ</a>
+      <a href="#">Mentors</a>
+    </div>
+
+    <div class="footer-contact">
+      <p>Email: shauennurasyl2007@gmail.com</p>
+      <p>© 2025 MyMentor</p>
+    </div>
+  </div>
+</footer>
+
+</div>
+</body>
+</html>

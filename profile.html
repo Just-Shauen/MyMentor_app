@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Profile</title>
+  <style>
+    body {
+      background: #1e1f21;
+      color: #fff;
+      font-family: 'Poppins', sans-serif;
+      padding: 30px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      background: #2a2b2e;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 20px rgba(0,255,128,0.1);
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .info {
+      margin: 15px 0;
+    }
+    .info strong {
+      color: #00cc88;
+    }
+    .button-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.logout-btn {
+  padding: 10px 20px;
+  border: none;
+  background: #ff4d4d;
+  color: white;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.logout-btn:hover {
+  background: #e04343;
+}
+
+    
+    .link-button {
+  display: inline-block;
+  margin: 10px 10px 0 0;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s;
+  background: #4da6ff;
+  color: white
+}
+
+.link-button:hover {
+  opacity: 0.85;
+}
+
+
+    .progress-bar {
+      background: #444;
+      border-radius: 10px;
+      overflow: hidden;
+      height: 20px;
+      margin-top: 10px;
+    }
+    .progress {
+      background: #00cc88;
+      height: 100%;
+      transition: width 0.3s;
+    }
+
+    .footer {
+  background-color: #2a2b2e;
+  color: #f0f0f0;
+  padding: 40px 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-brand h2 {
+  margin: 0 0 10px;
+  color: #ffffff;
+}
+
+.footer-brand p {
+  margin: 0;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.footer-links a {
+  text-decoration: none;
+  color: #dddddd;
+  font-size: 14px;
+  transition: color 0.2s ease-in-out;
+}
+
+.footer-links a:hover {
+  color: #1e90ff;
+}
+
+.footer-contact p {
+  font-size: 13px;
+  margin: 4px 0;
+  color: #999999;
+}
+
+
+  </style>
+  <script src="profile.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>My Profile</h1>
+    <div class="info">
+      <p><strong>Name:</strong> <span id="userName"></span></p>
+      <p><strong>Mentor:</strong> <span id="userMentor"></span></p>
+      <p><strong>Goal:</strong> <span id="userGoal"></span></p>
+      <p><strong>Task Progress:</strong></p>
+      <div class="progress-bar">
+        <div class="progress" id="progressFill" style="width: 0%"></div>
+      </div>
+    </div>
+    <div class="button-row">
+  <div class="links">
+    <a href="resources.html" class="link-button">Resources</a>
+    <a href="dashboard.html" class="link-button secondary">Tasks</a>
+  </div>
+  <button onclick="logout()" class="logout-btn">Log Out</button>
+</div>
+
+
+
+    <footer class="footer">
+  <div class="footer-container">
+    <div class="footer-brand">
+      <h2>MyMentor</h2>
+      <p>Platform for learning IT with mentors</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#">About Us</a>
+      <a href="#">Contacts</a>
+      <a href="#">FAQ</a>
+      <a href="#">Privacy Policy.</a>
+    </div>
+
+    <div class="footer-contact">
+      <p>Email: shauennurasyl2007@gmail.com</p>
+      <p>© 2025 MyMentor</p>
+    </div>
+  </div>
+</footer>
+  </div>
+
+  
+
+  <script>
+    
+
+  </script>
+</body>
+</html>
