@@ -17,7 +17,6 @@ function renderNotes() {
     span.innerText = note;
     span.contentEditable = false;
 
-    // Edit button
     const editBtn = document.createElement("span");
     editBtn.className = "action-btn-small";
     editBtn.innerText = "Edit";
@@ -26,7 +25,6 @@ function renderNotes() {
       span.focus();
     };
 
-    // Save on blur
     span.onblur = () => {
       const newText = span.innerText.trim();
       if (newText && newText !== currentUser.resources[index]) {
@@ -36,7 +34,6 @@ function renderNotes() {
       span.contentEditable = false;
     };
 
-    // Delete icon
     const delImg = document.createElement("img");
     delImg.src = "img/bin_icon.webp";
     delImg.alt = "Delete";

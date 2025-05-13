@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Task Dashboard</title>
   <style>
   body {
@@ -53,8 +54,7 @@
   }
 
   input[type="text"] {
-    width: 100%;
-    max-width: 600px;
+    min-width: 70%;
     padding: 10px;
     margin: 10px auto;
     display: block;
@@ -88,7 +88,6 @@
   .container {
     max-width: 1000px;
     margin: auto;
-    padding: 30px;
 }
 .container {
       margin: auto;
@@ -100,10 +99,10 @@
     }
     .btns{
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
       width:100%;
       max-width: 800px;
-      padding-left: 60px
+      padding-left: 5vw;
     }
   .action-btn {
   background-color: #4da6ff;
@@ -173,6 +172,64 @@
   margin: 4px 0;
   color: #999999;
 }
+
+
+@media (max-width: 768px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+
+  h2, h3, h4 {
+    font-size: 18px;
+  }
+
+  input[type="text"] {
+    width: 95%;
+    font-size: 14px;
+  }
+
+  .btns {
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0;
+  }
+
+  .btns button {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .action-btn {
+    margin-left: 0;
+    width: 20%;
+    text-align: center;
+    font-size: 2vw
+  }
+/* 
+  #taskList li {
+    flex-direction: column;
+    align-items: flex-start;
+  } */
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-contact p, .footer-links a {
+    font-size: 13px;
+  }
+
+  .footer-brand h2 {
+    font-size: 20px;
+  }
+}
+
 </style>
 
 <script src="dashboard.js" defer></script>
@@ -181,44 +238,44 @@
 <body>
   <div class="container">
 
-    <h2><span id="username"></span></h2>
-    <h4>Your mentor: <span id="mentorName"></span></h4>
-  
-    <h3>Your Tasks</h3>
-    <a href="profile.html" class="action-btn">Back to profile</a>
-  
+      <h2><span id="username"></span></h2>
+      <h4>Your mentor: <span id="mentorName"></span></h4>
     
-  
-   
-    <div class="btns">
-       <input type="text" id="newTask" placeholder="New task...">
+      <h3>Your Tasks</h3>
+      <a href="profile.html" class="action-btn ">Back to profile</a>
+    
+      
+    
+    
+      <div class="btns">
+        <input type="text" id="newTask" placeholder="New task...">
 
-      <button onclick="addTask()">Add</button>
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="taskList"></ul>
+
+
+      <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <h2>MyMentor</h2>
+        <p>Platform for learning IT with mentors</p>
+      </div>
+
+      <div class="footer-links">
+        <a href="#">About Us</a>
+        <a href="#">Contacts</a>
+        <a href="#">FAQ</a>
+        <a href="#">Privacy Policy.</a>
+      </div>
+
+      <div class="footer-contact">
+        <p>Email: shauennurasyl2007@gmail.com</p>
+        <p>© 2025 MyMentor</p>
+      </div>
     </div>
-    <ul id="taskList"></ul>
-
-
-    <footer class="footer">
-  <div class="footer-container">
-    <div class="footer-brand">
-      <h2>MyMentor</h2>
-      <p>Platform for learning IT with mentors</p>
-    </div>
-
-    <div class="footer-links">
-      <a href="#">About Us</a>
-      <a href="#">Contacts</a>
-      <a href="#">FAQ</a>
-      <a href="#">Privacy Policy.</a>
-    </div>
-
-    <div class="footer-contact">
-      <p>Email: shauennurasyl2007@gmail.com</p>
-      <p>© 2025 MyMentor</p>
-    </div>
-  </div>
-</footer>
-  </div>
+   </footer>
+</div>
 
   
 </body>
